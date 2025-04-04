@@ -1,11 +1,40 @@
 # CampusReady
 
+
+## Project Structure
+```sh
+project-root/
+├── backend/
+│   ├── config.js
+│   ├── models/
+│   │   ├── User.js
+│   │   └── Conversion.js
+│   ├── middleware/
+│   │   └── auth.js
+│   ├── routes/
+│   │   ├── auth.js
+│   │   └── conversion.js
+│   └── server.js
+└── frontend/
+    ├── package.json
+    ├── pages/
+    │   ├── _app.js
+    │   ├── index.js         // Login page
+    │   ├── register.js
+    │   ├── dashboard.js
+    │   ├── upload.js
+    │   └── conversion/
+    │       └── [id].js      // Conversion details
+    └── styles/
+        └── globals.css
+
+```
 ## Setup and Run Instructions
 
 ### Prerequisites
 Ensure you have the following installed on your system:
 - Node.js (latest LTS version recommended)
-- npm or yarn
+- npm
 - Python (for PDF parsing)
 
 ### Installation
@@ -58,8 +87,8 @@ npm run dev
 
 - **Node.js & Express.js**: Backend framework for handling API requests efficiently.
 - **MongoDB**: NoSQL database for flexible and scalable data storage.
-- **React (or Vanilla JS if limited)**: Frontend framework for dynamic UI rendering.
-- **PDF Parsing Library (pdf-parse/PyMuPDF)**: Extracting text and structure from PDFs.
+- **React **: Frontend framework for dynamic UI rendering.
+- **PDF Parsing Library (pdf-parse)**: Extracting text and structure from PDFs.
 - **XML Parser (xml2js)**: Converting structured data into XML format.
 
 ## Challenge Level Implemented
